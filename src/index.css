@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  background-color: #101014;
+ 
+}
+/* Custom color for dots */
+.slick-dots li button::before {
+  color: white; /* Change to your preferred color */
+  opacity: 1; /* Makes the dots fully opaque */
+}
+
+/* Custom color for active dot */
+.slick-dots li.slick-active button::before {
+  color: grey; /* Change to your preferred active dot color */
+}
+.masking{
+  mask-image:linear-gradient(to left , rgba(0,0,0,0.5), rgba(0,0,0,0.5) 45% ,transparent 100%);
+}
+
+
+.resultover::-webkit-scrollbar {
+  width: 8px; /* Customize width */
+}
+
+.resultover::-webkit-scrollbar-track {
+  background-color: #303033; /* Track color */
+}
+
+.resultover::-webkit-scrollbar-thumb {
+  background-color: rgb(24, 23, 23); /* Thumb color */
+  border-radius: 10px; /* Optional: Rounded corners */
+}
+
+.resultover::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(31, 30, 30); /* Optional: Thumb color on hover */
+}
+
